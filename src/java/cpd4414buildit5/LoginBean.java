@@ -15,16 +15,17 @@
  */
 package cpd4414buildit5;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import java.io.Serializable;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
 
 /**
  *
  * @author Len Payne <len.payne@lambtoncollege.ca>
  */
-@ManagedBean
+@Named
 @SessionScoped
-public class LoginBean {
+public class LoginBean implements Serializable {
 
     private String username = "";
     private String password = "";
